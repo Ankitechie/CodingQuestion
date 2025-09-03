@@ -1,0 +1,102 @@
+#Write a function that returns the number of vowels in a given string.
+#Palindrom
+#Anargam of each other
+#Reverse a string
+#Write a program to find the longest substring without repeating characters.
+#count of each character and max count of character in a string
+#Extract Domain from Email Given "user@example.com", extract "example.com"
+
+
+*********************************** Write a function that returns the number of vowels in a given string. ***********************
+
+def test_string(input):
+    test=input
+    vow='aeiou'
+    l=[]
+    for i in test:
+        if i in vow:
+            l.append(i)
+    return l
+test_string('ankit')
+
+*************************************** Check String is Palindrom **********************************************
+a='Madam'
+b= a.lower()
+
+print(b)
+
+if b==b[::-1]:
+    print("String is Palindrome")
+
+************************************** Anagram of Each other **************************************************
+
+a = 'banana'
+b = 'nabana'
+
+# Count characters in string a
+adict = {} # creating dictionaries
+for char in a:
+    adict[char] = adict.get(char, 0) + 1
+
+# Count characters in string b
+bdict = {}
+for char in b:
+    bdict[char] = bdict.get(char, 0) + 1
+
+# Compare the two dictionaries
+if adict == bdict:
+    print('Strings are anagrams of each other')
+else:
+    print('Strings are NOT anagrams')
+
+
+***************************** Reverse a string **************************************
+test='abca'
+reverse=''
+for i in range(len(test)-1,-1,-1):
+    print(test[i])
+    reverse+= test[i]
+
+print(reverse)
+
+if test==reverse:
+    print("palindrom")
+else:
+    print("no palindrome")
+
+***************************Write a program to find the longest substring without repeating characters *****************
+
+test='abca'
+op: 'abc'
+a=''
+for i in test:
+    if i in a:
+        break
+    else:
+        a=a+(i) # use list and we can use a.append() or use set and use .add()
+print(a,len(a))
+
+**************************** count of each character and max count of character in a string ***************************************
+a = 'hello world'
+a = a.replace(" ", "")
+
+char_count = {}
+
+# Count frequency of each character
+for i in a:
+    char_count[i] = char_count.get(i, 0) + 1
+
+#count of each character
+print(char_count)
+# Find the maximum frequency
+max_freq = 0
+for value in char_count.values():
+    if value > max_freq:
+        max_freq = value
+
+# Find character(s) with that max frequency
+for key, value in char_count.items():
+    if value == max_freq:
+        print(f"Character with max frequency: '{key}' -> {value} times")
+
+
