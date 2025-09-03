@@ -4,7 +4,21 @@
 #Reverse a string
 #Write a program to find the longest substring without repeating characters.
 #count of each character and max count of character in a string
+#Reverse words in a sentence Input: "Data Engineering Interview" → Output: "Interview Engineering Data"
+#Find all permutations of a string (optional: limit output size) Input: "abc" → Output: ["abc", "acb", "bac", "bca", "cab", "cba"]
+#Find all duplicate characters in a string Input: "engineering" → Output: {'e': 2, 'n': 3, 'g': 2, 'i': 2}
 #Extract Domain from Email Given "user@example.com", extract "example.com"
+#Clean and normalize a string (remove special chars, lowercase, trim) Input: " Hello!!  Data  Engineer *** " → Output: "hello data engineer"
+
+#Parse a log line to extract fields Input: "INFO 2023-09-03 - user_id=456 action=login status=success" Output: user_id: 456, action: login, status: success
+#Count word frequency in a string (Word Count) Input: "this is a test this is only a test" → Output: {'this': 2, ...}
+#Check if one string is rotation of another Input: "abcd", "cdab" → Output: True
+#Find the first non-repeating character Input: "aabbcdde" → Output: 'c'
+#Convert a string to an integer (without using int()) Input: "123" → Output: 123
+#Validate email format using regex or logic  Input: "user.name@example.co" → Output: True
+#Parse a messy CSV line with quotes and commas Input: '"1","John, Doe","New York",23' → Output: ['1', 'John, Doe', 'New York', '23']
+#Compress a string using run-length encoding Input: "aaabbccc" → Output: "a3b2c3"
+#Decompress a run-length encoded string Input: "a3b2c3" → Output: "aaabbccc"
 
 
 *********************************** Write a function that returns the number of vowels in a given string. ***********************
