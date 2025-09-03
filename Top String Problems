@@ -21,7 +21,7 @@
 #Decompress a run-length encoded string Input: "a3b2c3" → Output: "aaabbccc"
 
 
-*********************************** Write a function that returns the number of vowels in a given string. ***********************
+********* Write a function that returns the number of vowels in a given string. ***********************
 
 def test_string(input):
     test=input
@@ -33,7 +33,7 @@ def test_string(input):
     return l
 test_string('ankit')
 
-*************************************** Check String is Palindrom **********************************************
+*************** Check String is Palindrom **********************************************
 a='Madam'
 b= a.lower()
 
@@ -42,7 +42,8 @@ print(b)
 if b==b[::-1]:
     print("String is Palindrome")
 
-************************************** Anagram of Each other **************************************************
+
+****** Anagram of Each other *****************************************
 
 a = 'banana'
 b = 'nabana'
@@ -64,7 +65,8 @@ else:
     print('Strings are NOT anagrams')
 
 
-***************************** Reverse a string **************************************
+****** Reverse a string********
+**************************************
 test='abca'
 reverse=''
 for i in range(len(test)-1,-1,-1):
