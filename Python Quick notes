@@ -1,0 +1,48 @@
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}  # Creating a dictionary
+
+print(my_dict['name'])  # Output: Alice
+
+# Adding or updating an item
+my_dict['email'] = 'alice@example.com'  # Add new key-value pair
+my_dict['age'] = 26                     # Update existing key
+
+# Removing an item
+del my_dict['city']       # Remove by key
+age = my_dict.pop('age')  # Remove and get value
+print(f"Removed age: {age}")
+
+# Checking if a key exists
+if 'name' in my_dict:
+    print("Name exists")
+
+# Getting all keys, values, or items
+print(my_dict.keys())    # dict_keys(['name', 'email'])
+print(my_dict.values())  # dict_values(['Alice', 'alice@example.com'])
+print(my_dict.items())   # dict_items([('name', 'Alice'), ('email', 'alice@example.com')])
+
+# Iterating through dictionary
+for key, value in my_dict.items():
+    print(key, value)
+
+# Clearing the dictionary
+my_dict.clear()
+print(my_dict)  # Output: {}
+
+# Copying a dictionary
+my_dict = {'name': 'Alice', 'email': 'alice@example.com'}
+new_dict = my_dict.copy()
+print(new_dict)
+
+# Using get() method to access values safely
+age = my_dict.get('age', 'Not found')  # Returns 'Not found' if key doesn't exist
+print(age)
+
+
+# Example: Counting character frequency in a string using dictionary
+a = "hello world"
+adict = {}  # Creating an empty dictionary
+
+for char in a:
+    adict[char] = adict.get(char, 0) + 1
+
+print(adict)  # Output: {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
